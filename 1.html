@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>牛头人个人网页</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>欢迎来到牛头人的个人网页</h1>
+        <nav>
+            <a href="#about">关于我</a>
+            <a href="#portfolio">作品集</a>
+            <a href="#skills">技能</a>
+            <a href="#education">教育背景</a>
+            <a href="#experience">工作经历</a>
+            <a href="#blog">博客</a>
+            <a href="#contact">联系方式</a>
+        </nav>
+    </header>
+    <main>
+        <section id="about" class="section">
+            <h2>关于我</h2>
+            <p>这里是关于你的介绍，可以是你的职业、兴趣或者是你想要分享的任何信息。</p>
+            <img src="profile.jpg" alt="牛头人" class="profile">
+        </section>
+        <section id="portfolio" class="section">
+            <h2>作品集</h2>
+            <p>这里可以展示你的作品，比如设计、摄影、编程项目等。</p>
+            <div class="portfolio-grid">
+                <img src="work1.jpg" alt="作品1">
+                <img src="work2.jpg" alt="作品2">
+                <!-- 更多作品图片 -->
+            </div>
+        </section>
+        <section id="skills" class="section">
+            <h2>技能</h2>
+            <ul class="skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Photoshop</li>
+                <li>Illustrator</li>
+                <li>Node.js</li>
+                <li>React</li>
+                <li>Vue</li>
+                <li>Angular</li>
+                <li>Docker</li>
+            </ul>
+        </section>
+        <section id="education" class="section">
+            <h2>教育背景</h2>
+            <div class="education">
+                <h3>大学名称 - 学位</h3>
+                <p>专业名称，毕业年份。</p>
+            </div>
+            <!-- 更多教育经历 -->
+        </section>
+        <section id="experience" class="section">
+            <h2>工作经历</h2>
+            <div class="experience">
+                <h3>公司名称 - 职位</h3>
+                <p>工作描述，工作年份。</p>
+            </div>
+            <!-- 更多工作经历 -->
+        </section>
+        <section id="blog" class="section">
+            <h2>博客</h2>
+            <article class="blog-post">
+                <h3>博客文章标题</h3>
+                <p>这里是博客文章的摘要或者内容。</p>
+            </article>
+            <!-- 更多博客文章 -->
+        </section>
+        <section id="contact" class="section">
+            <h2>联系方式</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="你的名字" required>
+                <input type="email" placeholder="你的邮箱" required>
+                <textarea placeholder="你的消息"></textarea>
+                <button type="submit">发送消息</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>版权所有 &copy; 2024 牛头人</p>
+    </footer>
+    <script>
+        // 示例JavaScript代码，用于处理表单提交
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('感谢你的留言，牛头人会尽快回复你！');
+        });
+    </script>
+</body>
+</html>
